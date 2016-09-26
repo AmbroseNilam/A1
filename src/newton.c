@@ -1,10 +1,16 @@
+/****************************************
+ * Ambrose Nilam        		0932038 *
+ * CIS*2520	               		A1		*
+ * September 26th 2016					*
+*****************************************/
+
 #include "math.h"
 
 double newton(double x, double E) {
 	if (x > 0.0) {
 		double a = x / 2.0;
-		while ((fabs(a * a - x) <= E) == 0) {
-			a = (a + x / a) / 2;
+		while ((fabs(a * a - x) <= E) == 0) { // Aproximation check
+			a = (a + x / a) / 2; // Re-Approximate
 		}
 		return a;
 	}

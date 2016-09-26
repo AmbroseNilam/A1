@@ -1,3 +1,9 @@
+/****************************************
+ * Ambrose Nilam        		0932038 *
+ * CIS*2520	               		A1		*
+ * September 26th 2016					*
+*****************************************/
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>

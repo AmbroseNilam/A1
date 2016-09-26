@@ -1,3 +1,9 @@
+/****************************************
+ * Ambrose Nilam        		0932038 *
+ * CIS*2520	               		A1		*
+ * September 26th 2016					*
+*****************************************/
+
 #include <sys/timeb.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -5,6 +11,7 @@
 #include "ackermann.h"
 #include "newton.h"
 #include "string.h"
+
 
 /**
  * Function will to the required testing to validate the users input.
@@ -18,7 +25,7 @@ int main(int argc, char const *argv[])
 		{
 			if(argc != 4)
 			{
-				printf("%s\n", "Invalid Syntax! Use ./main newton (x) -> Example: ./main newton 64 0.1");
+				printf("%s\n", "Invalid Syntax! Use ./main newton (x, e) -> Example: ./main newton 64 0.1");
 			} 
 			else 
 			{
@@ -83,7 +90,7 @@ int main(int argc, char const *argv[])
 	} 
 	else 
 	{
-		printf("%s\n", "Invalid Syntax! Use: ./main [newton (x, e), carbon (string), ackermann (m, n, e)]");
+		printf("%s\n", "Invalid Syntax! Use: ./main [newton (x, e), carbon (string), ackermann (m, n)]");
 	}
 	return 0;
 }
